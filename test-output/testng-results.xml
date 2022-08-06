@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-08-04T22:04:26 IST" name="Suite" finished-at="2022-08-04T22:05:13 IST" duration-ms="47281">
+    <groups>
+    </groups>
+    <test started-at="2022-08-04T22:04:26 IST" name="ChromeTest" finished-at="2022-08-04T22:05:13 IST" duration-ms="47281">
+      <class name="com.sauceDemo.TestClasses.TC002_VerifyLogOutFunctionality">
+        <test-method is-config="true" signature="setUP(java.lang.String)[pri:0, instance:com.sauceDemo.TestClasses.TC002_VerifyLogOutFunctionality@1e683a3e]" started-at="2022-08-04T22:04:26 IST" name="setUP" finished-at="2022-08-04T22:04:39 IST" duration-ms="12502" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="logOutFunctionality()[pri:0, instance:com.sauceDemo.TestClasses.TC002_VerifyLogOutFunctionality@1e683a3e]" started-at="2022-08-04T22:04:39 IST" name="logOutFunctionality" finished-at="2022-08-04T22:04:41 IST" duration-ms="2022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sauceDemo.TestClasses.TC002_VerifyLogOutFunctionality@1e683a3e]" started-at="2022-08-04T22:04:41 IST" name="tearDown" finished-at="2022-08-04T22:04:42 IST" duration-ms="809" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sauceDemo.TestClasses.TC002_VerifyLogOutFunctionality -->
+      <class name="com.sauceDemo.TestClasses.TC004_VerifyMultipleproductAddtoCartFunctionality">
+        <test-method is-config="true" signature="setUP(java.lang.String)[pri:0, instance:com.sauceDemo.TestClasses.TC004_VerifyMultipleproductAddtoCartFunctionality@4738a206]" started-at="2022-08-04T22:04:52 IST" name="setUP" finished-at="2022-08-04T22:05:01 IST" duration-ms="8145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="mutipleProductAddToCartFunctionality()[pri:0, instance:com.sauceDemo.TestClasses.TC004_VerifyMultipleproductAddtoCartFunctionality@4738a206]" started-at="2022-08-04T22:05:01 IST" name="mutipleProductAddToCartFunctionality" finished-at="2022-08-04T22:05:03 IST" duration-ms="1971" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [6] but found [3]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [6] but found [3]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.sauceDemo.TestClasses.TC004_VerifyMultipleproductAddtoCartFunctionality.mutipleProductAddToCartFunctionality(TC004_VerifyMultipleproductAddtoCartFunctionality.java:29)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mutipleProductAddToCartFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sauceDemo.TestClasses.TC004_VerifyMultipleproductAddtoCartFunctionality@4738a206]" started-at="2022-08-04T22:05:03 IST" name="tearDown" finished-at="2022-08-04T22:05:03 IST" duration-ms="730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sauceDemo.TestClasses.TC004_VerifyMultipleproductAddtoCartFunctionality -->
+      <class name="com.sauceDemo.TestClasses.TC003_VerfiyBagProductAddtoCartFunctionality">
+        <test-method is-config="true" signature="setUP(java.lang.String)[pri:0, instance:com.sauceDemo.TestClasses.TC003_VerfiyBagProductAddtoCartFunctionality@66d3eec0]" started-at="2022-08-04T22:05:03 IST" name="setUP" finished-at="2022-08-04T22:05:11 IST" duration-ms="7511" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="bagProductAddTOCartFunctionality()[pri:0, instance:com.sauceDemo.TestClasses.TC003_VerfiyBagProductAddtoCartFunctionality@66d3eec0]" started-at="2022-08-04T22:05:11 IST" name="bagProductAddTOCartFunctionality" finished-at="2022-08-04T22:05:13 IST" duration-ms="1676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bagProductAddTOCartFunctionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sauceDemo.TestClasses.TC003_VerfiyBagProductAddtoCartFunctionality@66d3eec0]" started-at="2022-08-04T22:05:13 IST" name="tearDown" finished-at="2022-08-04T22:05:13 IST" duration-ms="784" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sauceDemo.TestClasses.TC003_VerfiyBagProductAddtoCartFunctionality -->
+      <class name="com.sauceDemo.TestClasses.TC001_VerifyLoginFunctionality">
+        <test-method is-config="true" signature="setUP(java.lang.String)[pri:0, instance:com.sauceDemo.TestClasses.TC001_VerifyLoginFunctionality@614ca7df]" started-at="2022-08-04T22:04:42 IST" name="setUP" finished-at="2022-08-04T22:04:49 IST" duration-ms="7717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method signature="loginFuntionality()[pri:0, instance:com.sauceDemo.TestClasses.TC001_VerifyLoginFunctionality@614ca7df]" started-at="2022-08-04T22:04:49 IST" name="loginFuntionality" finished-at="2022-08-04T22:04:52 IST" duration-ms="2401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFuntionality -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.sauceDemo.TestClasses.TC001_VerifyLoginFunctionality@614ca7df]" started-at="2022-08-04T22:04:52 IST" name="tearDown" finished-at="2022-08-04T22:04:52 IST" duration-ms="741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.sauceDemo.TestClasses.TC001_VerifyLoginFunctionality -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Suite -->
+</testng-results>
