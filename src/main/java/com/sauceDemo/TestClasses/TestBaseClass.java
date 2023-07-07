@@ -31,7 +31,9 @@ public class TestBaseClass
 		{
 		System.setProperty("webdriver.chrome.driver", 
 				"./DriverFolder/chromedriver.exe");
-		driver = new ChromeDriver();
+			ChromeOptions Options = new ChromeOptions();
+			Options.addArguments("--remote-allow-origins=*");
+		driver = new ChromeDriver(Options);
 		}
 		
 		else if(browserName.equals("firefox"))
